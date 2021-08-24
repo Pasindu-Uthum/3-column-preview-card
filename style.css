@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -21,9 +23,170 @@ body {
           justify-content: center;
 }
 
+/*Desktop Version*/
 .main-container {
-  width: 900px;
-  height: 600px;
-  border: 1px solid black;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.sedans, .suvs, .luxary {
+  width: 300px;
+  float: left;
+  height: 500px;
+  padding: 50px;
+}
+
+.sedans {
+  background-color: #e38826;
+}
+
+.suvs {
+  background-color: #006970;
+}
+
+.luxary {
+  background-color: #004241;
+}
+
+.sedans h1, .suvs h1, .luxary h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sedans p, .suvs p, .luxary p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 70px;
+}
+
+.sedans button, .suvs button, .luxary button {
+  font-family: 'Lexend Deca', sans-serif;
+  height: 3em;
+  background-color: white;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid white;
+  border-radius: 1.5em;
+}
+
+.sedans button:hover, .suvs button:hover, .luxary button:hover {
+  background: transparent;
+  color: white;
+}
+
+.sedans button {
+  color: #e38826;
+}
+
+.suvs button {
+  color: #006970;
+}
+
+.luxary button {
+  color: #004241;
+}
+
+/*Desktop Version*/
+/*Mobile Version*/
+.main-container-mobile {
+  margin: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: none;
+}
+
+.sedans-mobile, .suvs-mobile, .luxary-mobile {
+  height: 400px;
+  padding: 50px;
+}
+
+.sedans-mobile {
+  background-color: #e38826;
+}
+
+.suvs-mobile {
+  background-color: #006970;
+}
+
+.luxary-mobile {
+  background-color: #004241;
+}
+
+.sedans-mobile h1, .suvs-mobile h1, .luxary-mobile h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sedans-mobile p, .suvs-mobile p, .luxary-mobile p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 70px;
+}
+
+.sedans-mobile button, .suvs-mobile button, .luxary-mobile button {
+  font-family: 'Lexend Deca', sans-serif;
+  height: 3em;
+  background-color: white;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid white;
+  border-radius: 1.5em;
+}
+
+.sedans-mobile button:hover, .suvs-mobile button:hover, .luxary-mobile button:hover {
+  background: transparent;
+  color: white;
+}
+
+.sedans-mobile button {
+  color: #e38826;
+}
+
+.suvs-mobile button {
+  color: #006970;
+}
+
+.luxary-mobile button {
+  color: #004241;
+}
+
+/*Mobile Version*/
+/*Responsive Effect of the page*/
+@media screen and (max-width: 901px) {
+  .main-container-mobile {
+    display: block;
+  }
+  .main-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .sedans-mobile, .suvs-mobile, .luxary-mobile {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
