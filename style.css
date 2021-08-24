@@ -7,7 +7,7 @@
   margin: 0;
 }
 
-body {
+.desktop-version {
   height: 100vh;
   width: 100vw;
   padding: 0;
@@ -179,7 +179,7 @@ body {
   .main-container-mobile {
     display: block;
   }
-  .main-container {
+  .desktop-version {
     display: none;
   }
 }
